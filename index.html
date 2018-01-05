@@ -1,42 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html><!DOCTYPE html>
+<html lang="ru">
 <head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<title>Экскурсия</title>
 	<meta name="description" content="Виртуальная экскурсия по литературной Москве">
 	<meta name="keywords" content="Толстой, Булгаков, Ильф, Петров, Пастернак, Москва, литература, экскурсия, Ростовы, Война и мир, Доктор Живаго, Двендцать стульев. Мастер и Маргарита">
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+	<!-- Bootstrap CSS -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/mystyle.css">
 </head>
-<body> <h1> Экскурсия по литературной Москве </h1>
-	<h2> От дома Ростовых до «нехорошей квартиры»</h2>
-	<div class="center"> 
-		<img src="https://static.tildacdn.com/tild3432-3033-4430-a630-623137373832/5.jpg" title="В путь" alt="В путь" "> 
+<body>
+	<!-- menu -->
+	<div class="fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="/index.html">Начало</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Маршрут
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="/pages/1.html"><b>Дом Ростовых</b></a>
+							<a class="dropdown-item" href="/pages/2.html"><b>Дом Эллочки-людоедочки</b></a>
+							<a class="dropdown-item" href="/pages/3.html"><b>Квартира Юрия Живаго</b></a>
+							<a class="dropdown-item" href="/pages/4.html"><b>Патриаршие пруды</b></a>
+							<a class="dropdown-item" href="/pages/5.html"><b>«Нехорошая квартира»</b></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
 	</div>
-	<div>
-		<ol>
-			<li><a href="/pages/1.html"><b>Дом Ростовых</b>, Поварская улица, 52</a></li>
-			<li><a href="/pages/2.html"><b>Дом Эллочки-людоедочки</b>, Варсонофьевский переулок</a></li>
-			<li><a href="/pages/3.html"><b>Квартира Юрия Живаго</b>, Камергерский перулок</a></li>
-			<li><a href="/pages/4.html"><b>Патриаршие пруды</b></a></li>
-			<li><a href="/pages/5.html"><b>«Нехорошая квартира»</b>, Большая садовая, 10</a></li>
+
+	<!-- jumbotron -->  
+	<div class="mt-5">
+		<section class="jumbotron text-center">
+			<div class="container">
+				<h1 class="m-4" class="jumbotron-heading">Экскурсия по  литературной Москве</h1>
+				<p> Москва — один из тех городов мира, где едва ли не каждая улочка имеет своё культурное или историческое значение. Немало мест в Москве связано с богатым миром русской литературы. Одна улица знаменита тем, что на ней жил известный писатель, другая была увековечена на книжных страницах.				
+				</p>
+				<br></br>
+				<p>	Перед вами литературный маршрут по тем местам Москвы, где происходили действия известных русских романов. Маршрут построен в хронологическом порядке — от «Войны и ми ра» до «Мастера и Маргариты». Для полноты впечатления все основные пункты маршрута сопровождаются аудио-отрывками из произведений и сферическими панорамами.
+				</p>
+				<br></br>
+				<h3 class="p-3">Желаем вам интересной и познавательной прогулки!</h3>
+				<a href="/pages/1.html" class="btn btn-primary"><h2>В путь!</h2></a>
+			</div>
+		</section>
+	</div>
+
+	<!-- carousel-->
+	<section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+			<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+			<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+
 		</ol>
-	</div>
-	<div>
+
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="/im/1.jpg" class="img-fluid" alt="First slide">
+				<div class="container">
+					<div class="carousel-caption d-none d-md-block text-left">
+						<h1>Дом Ростовых</h1>
+						<p>CДом с мезонином на Поварской, 52 и есть знаменитая усадьба семейства Ростовых из романа «Война и мир». Именно сюда съезжались гости на именины Наташи, в старинных залах танцевал Данилу Купора старый граф.</p>
+						<p><a class="btn btn-lg btn-primary" href="/pages/1.html" role="button">Больше!</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<img class="d-block w-100" src="/im/2.jpg" class="img-fluid"  alt="Second slide">
+				<div class="container">
+					<div class="carousel-caption d-none d-md-block text-left">
+						<h1>Дом Эллочки-людоедочки</h1>
+						<p>По сюжету знаменитого сатирического романа И. Ильфа и Е. Петрова «12 стульев» именно в Варсонофьевском переулке жила Елена Щукина по прозвищу Эллочка-людоедка, прославившаяся своим скудным словарным запасом.</p>
+						<p><a class="btn btn-lg btn-primary" href="/pages/2.html" role="button">Больше!</a></p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<img class="d-block w-100" src="/im/3.jpg" class="img-fluid" alt="Third slide">
+				<div class="container">
+					<div class="carousel-caption d-none d-md-block text-left">
+						<h1> Квартира Юрия Живаго</h1> 
+						<p>Вот мы и на Камергерском переулке.
+						Здесь почти сто лет назад, накануне Рождества, проезжали сани с Юрием Живаго. «Свеча горела на столе. Свеча горела», — тихо произносит он об одном из многочисленных окон домов на Камергерском.</p>
+						<p><a class="btn btn-lg btn-primary" href="/pages/3.html" role="button">Больше!</a></p>
+					</div>			
+				</div>
+
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="/im/4.jpg" class="img-fluid"  alt="Second slide">
+				<div class="container">
+					<div class="carousel-caption d-none d-md-block text-left">
+						<h1>Патриаршие пруды</h1>
+						<p>Патриаршие пруды являются культовым местом для всех поклонников творчества М. Булгакова. Именно здесь появляются два неизвестных гражданина, и начинается действие романа «Мастер и Маргарита»..</p>
+						<p><a class="btn btn-lg btn-primary" href="/pages/4.html" role="button">Больше!</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<img class="d-block w-100" src="/im/5.jpg" class="img-fluid" alt="Second slide">
+				<div class="container">
+					<div class="carousel-caption d-none d-md-block text-left">
+						<h1>Нехорошая квартира»</h1>
+						<p>Дом № 302-бис, где находилась «нехорошая квартира» в романе М. Булгакова «Мастер и Маргарита», в реальности является домом № 10 на Большой Садовой.</p>
+						<p><a class="btn btn-lg btn-primary" href="/pages/5.html" role="button">Больше!</a></p>
+					</div>
+				</div>
+			</div>
+
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</section>
+	<!-- grid-->
+	<section class="container marketing">
+		<div class="m-15">
+			<div class="row">
+				<div class="col-lg-3">
+					<img class="rounded-circle" src="/im/t.jpg" width="180" height="180">
+					<div class="p-2"> <h2>Лев Толстой</h2></div>
+					<blockquote class="blockquote">
+						<p class="font-weight-normal" class="mb-0">Величайшие истины — самые простые.</p>
+					</blockquote>
+					<p><a class="btn btn-secondary" href="/pages/1.html" role="button">Читать дальше &raquo;</a></p>
+				</div>
+
+				<div class="col-lg-3">
+					<img class="rounded-circle" src="/im/i.jpg"alt="Generic placeholder image" width="180" height="180">
+					<div class="p-2"> <h2>Илья Ильф & Евгений Петров</h2></div>
+					<blockquote class="blockquote">
+						<p class="mb-0">На каждую хорошую мысль неизбежно находится свой дурак, аккуратно доводящий её до абсурда.</p>
+					</blockquote>
+					<p><a class="btn btn-secondary" href="#" role="button">Читать дальше  &raquo;</a></p>
+				</div>
+				<div class="col-lg-3">
+					<img class="rounded-circle" src="/im/p.jpg" alt="Generic placeholder image" width="180" height="180">
+					<div class="p-2"> <h2>Борис Пастернак</h2></div>
+					<blockquote class="blockquote">
+						<p class="mb-0">Книга есть кубический кусок горячей, дымящейся совести — и больше ничего.</p>
+					</blockquote>
+					<p><a class="btn btn-secondary" href="#" role="button">Читать дальше &raquo;</a></p>
+				</div>
+				<div class="col-lg-3">
+					<img class="rounded-circle" src="/im/b.jpg" alt="Generic placeholder image" width="180" height="180">
+					<div class="p-2"><h2>Михаил Булгаков</h2></div>
+					<blockquote class="blockquote">
+						<p class="mb-0">Рукописи не горят</p>
+					</blockquote>
+					<p><a class="btn btn-secondary" href="#" role="button">Читать дальше  &raquo;</a></p>
+				</div>
+			</div><!-- /.row -->
+		</div>
+	</section>
+
+
+	<div class="m-4">
+		<section class="alert alert-primary" role="alert" text-center>
+			<h1 class="text-center">
+				Маршрут!
+			</h1>
+		</section>
+
 		<iframe src="https://yandex.ru/map-widget/v1/-/CBQ55Uw10D" width="100%" height="600" align="center" frameborder="0"></iframe>
-	<div>
-		<p>Москва — один из тех городов мира, где едва ли не каждая улочка имеет своё культурное или историческое значение. Немало мест в Москве связано с богатым миром русской литературы. Одна улица знаменита тем, что на ней жил известный писатель, другая была увековечена на книжных страницах.
-		<br></br>
-		Перед вами литературный маршрут по тем местам Москвы, где происходили действия известных русских романов. Маршрут построен в хронологическом порядке — от «Войны и ми ра» до «Мастера и Маргариты». Для полноты впечатления все основные пункты маршрута сопровождаются аудио-отрывками из произведений и сферическими панорамами.
-		<br></br>
-		Между основными пятью точками, которые отмечены на карте красным, находятся промежуточные —выделены синим. Они помогут вам сильнее окунуться в атмосферу литературной Москвы.
-		<br></br>
-		Желаем вам интересной и познавательной прогулки!</p>
 	</div>
-	<div class="way">
-		<a href="/pages/1.html"><h2> В путь!</h2></a>
+</div>
+
+
+<!--footer-->
+<footer class="p-3" class="text-muted">
+	<div class="container">
+		<p class="float-right">
+			<a href="#">Back to top</a>
+		</p>
+		<p>View original: <a href="https://moscowliterature.tilda.ws"> moscowliterature.tilda.ws</a></p>
 	</div>
-	<footer>
-    <p>View original: <a href="https://moscowliterature.tilda.ws"> moscowliterature.tilda.ws</a></p>
 </footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
-</html> 
+</html>

@@ -1,5 +1,5 @@
 body{
-	background: url(back.jpg) no-repeat;
+	background: url(/im/back.jpg) no-repeat;
 	background-size: cover;
 }
 h1,h2{
@@ -33,19 +33,19 @@ h2{
 a:hover{
 	color: green;
 }
-table{font-size: 16px;
+.table{font-size: 16px;
 	border-collapse: collapse;
-	width:100%;
+	width:100%;*/
 }
-/*table,th,td{
+table,th,td{
 	font-size: 20px;
 	padding: 10px;
 	border: 2px solid white;
 	border-collapse: collapse;
 	text-align: center;
-	padding: 10px;*/
+	padding: 10px;
 }
-th{
+/*th{
 	font-style: bold;
 	text-align:center;
 	padding: 10px}
@@ -61,5 +61,5 @@ footer{
 	background-color: white ;
 	background-size:cover;
 	font-size:18px;
-	text-align: center;
+	text-align: center;*/
 }
