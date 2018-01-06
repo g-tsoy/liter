@@ -21,10 +21,13 @@
   height: 90%;
 }
 
+/* using important is bad practice!
+try to avoid using it*/
 .m-10 {
   margin: 10 !important;
 }
 
+/* $spacer - this does not work*/
 .m {
   margin-top: ($spacer * 3) !important;
   margin-bottom: ($spacer * 3) !important;
@@ -43,6 +46,7 @@
   padding: $spacer !important;
 }
 table,th,td{
+  /*if you start using rem use rem always, do not use px*/
   font-size: 16px;
   padding: 2px;
   text-align: center;
@@ -73,3 +77,6 @@ p {
 
 }
 
+img.my-carousel-img {
+  height: 100%;
+}

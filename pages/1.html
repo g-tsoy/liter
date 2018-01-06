@@ -47,7 +47,8 @@
     <section class="jumbotron text-center">
       <div class="container">
         <h1 class="mt-4" class="jumbotron-heading">Дом Ростовых
-          <span class="badge badge-primary"><p>Первая остановка</p></span>
+          <!-- do not need p -->
+          <span class="badge badge-primary">Первая остановка</span>
         </h1>
       </div>
     </section>
@@ -59,8 +60,9 @@
 
         <!--clearfix-->
         <div class="bg-light clearfix">
-          <a href="/"> <button type="button" class="btn btn-primary text-white float-left">  <p> Назад </p> </button></a> 
-          <a href="/pages/2.html"> <button type="button" class="btn btn-primary text-white float-right">  <p> Вперед </p> </button></a> 
+          <!-- better this way -->
+          <a href="/" class="btn btn-primary btn-lg">Назад</a>
+          <a href="/pages/2.html" class="btn btn-primary btn-lg float-right">Вперед</a>
         </div>    
 
         <div class="mt-3">
@@ -72,8 +74,8 @@
         </div>
         <!-- Button trigger modal -->
         <div class="p-3">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-           <p>Больше!</p></button>
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
+           Больше!</button>
            <!-- Modal -->
            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -88,6 +90,7 @@
                   <div class="m-4">
                     <img src="/im/1.jpg" class="img-fluid" alt="Responsive image">
                   </div>
+                  <!-- prefere using div instead of p and br -->
                   <p>Дом с мезонином на Поварской, 52 и есть знаменитая усадьба семейства Ростовых из романа «Война и мир». Именно сюда съезжались гости на именины Наташи, в старинных залах танцевал Данилу Купора старый граф. Во времена Толстого усадьба, построенная в 1756 году, принадлежала барону Михаилу Львовичу Боде-Колычеву. Дом известного в Москве историка часто называли «музеем средневековых достопримечательностей». Здесь проходили приёмы и балы, благодаря которым Лев Николаевич хорошо знал усадьбу и её обитателей. Видимо, гостеприимство хозяев, их радушие и «атмосфера любовности» побудили писателя «поселить» семью Ростовых именно здесь.
                     <br></br>
                     Л. Толстой словно предвидел литературную судьбу дома на Поварской, а, возможно, именно таким образом она и началась. В середине 19 века в домовой церкви венчались Иван Сергеевич Аксаков, сын автора «Аленького цветочка», и Анна Фёдоровна Тютчева, дочь знаменитого поэта. Здесь, у Боде-Колычевых, останавливалась вдова Александра Грибоедова, когда была проездом в Москве. Затем дом перешёл во владения художника Фёдора Львовича Соллогуба, чьи родители тесно общались с Пушкиным и Гоголем. После революции в усадьбе был открыт «Дворец искусств», где выступали Александр Блок, Борис Пастернак, Сергей Есенин и Марина Цветаева. В этом доме располагался Союз писателей СССР, который в разное время возглавляли Максим Горький, Алексей Толстой и Александр Фадеев. Из дома на Поварской провожали в последний путь Владимира Маяковского, а после Михаила Булгакова. В середине XX века в подвале этого дома жил молодой поэт Роберт Рождественский.
@@ -108,10 +111,11 @@
         <div class="alert alert-secondary" role="alert">
           <h2>Промежуточные точки</h2>
           <ul>
-           <li><p>Фонтан-Ротонда</p></li>
-           <li><p>Памятник Сергею Есенину</p></li>
-           <li><p>Памятник Александру Пушкину</p></li>
-           <li><p>Памятник Александру Твардовскому</li></p>
+            <!-- no need using p -->
+           <li>Фонтан-Ротонда</li>
+           <li>Памятник Сергею Есенину</li>
+           <li>Памятник Александру Пушкину</li>
+           <li>Памятник Александру Твардовскому</li>
          </ul>
        </div>
      </div>
@@ -125,6 +129,7 @@
      <table class="table">
       <thead class="thead-dark">
         <tr>
+          <!-- scope attribute not necessary for browsers -->
           <th scope="col">#</th>
           <th scope="col">Назад</th>
           <th scope="col">Где я</th>
